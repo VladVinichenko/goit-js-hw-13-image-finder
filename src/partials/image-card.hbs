@@ -1,0 +1,35 @@
+{{#each this}}
+  <li class='image-card post' id='{{id}}'>
+    <a href='{{largeImageURL}} class image-card__link link'>
+      <div class='image-card__box'>
+        <img class='gallery__image' src='{{webformatURL}}' alt='photo' height='480px' />
+      </div>
+      <ul class='image-card__subtitle-list list'>
+        <li class='image-card__subtitle-item'>
+          {{! <svg class='image-card__icon'>
+            <use href='./images/svg/exampl.svg#icon-likes'></use>
+          </svg> }}
+          <p class='image-card__th'>L:</p>
+          <p>{{likes}}</p></li>
+        <li class='image-card__subtitle-item'>
+          {{! <svg class='image-card__icon'>
+            <use href='./images/svg/exampl.svg#icon-views'></use>
+          </svg> }}
+          <p class='image-card__th'>V:</p>
+          <p>{{views}}</p></li>
+        <li class='image-card__subtitle-item'>
+          {{! <svg class='image-card__icon'>
+            <use href='./images/svg/exampl.svg#icon-comments'></use>
+          </svg> }}
+          <p class='image-card__th'>C:</p>
+          <p>{{comments}}</p></li>
+        <li class='image-card__subtitle-item'>
+          {{! <svg class='image-card__icon'>
+            <use href='./images/svg/exampl.svg#icon-downloads'></use>
+          </svg> }}
+          <p class='image-card__th'>D:</p>
+          <p>{{downloads}}</p></li>
+      </ul>
+    </a>
+  </li>
+{{/each}}
